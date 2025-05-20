@@ -1,0 +1,666 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html, body {
+   min-height: 100vh; 
+    background: linear-gradient(#eefffa, white);
+    width: 100%;
+}
+
+.nav_items{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    background-color: white;
+}
+
+.options{
+    display: flex;
+    gap: 30px;
+    margin-left: 10px;
+    margin-top: 1%;
+    
+
+}
+.navbar{
+   
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.nav_icon img{
+    height: auto;
+    width: 79px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    z-index: 2000;
+    
+    
+    
+
+}
+
+
+.nav_searchbar{
+    margin-left: auto;
+    margin-right: 15%;
+    margin-top: 0.5%;
+    position: relative;
+    height: 100%;
+    width: 300px;
+    z-index: 2000;
+    
+    
+    
+    
+    
+    
+}
+
+.nav_searchbar input {
+    padding-left: 40px;
+    height: 40px;
+    width: 100%;
+    border-radius: 7px;
+    border:  1px solid #b3d5bb;
+    font-size: 15px;
+    border-width: 2px;
+    
+}
+
+.nav_searchbar i {
+    position: absolute;
+    left: 8px;
+    top: 30%;
+    
+    color: gray;
+    font-size: 17px;
+    
+    
+    width: 133px;
+    
+  }
+
+.nav_modes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+  
+
+.nav_signin{
+    height: 100%;
+    width: 120px;
+    margin-top: 0.5%;
+    margin-right: 1%;
+}
+
+.nav_signin button{
+    background-color: #273239;
+    color: #f8fcff;
+    height: 40px;
+    width: 133px;
+    border-radius: 7px;
+    cursor: pointer;
+    
+}
+
+.bar{
+    background-color: #ebebeb;
+    height: 1px;
+}
+
+.subnav{
+    height: 40px;
+    display: flex;
+    gap: 900px;
+    background-color: white;
+    position: sticky;
+    top: 50px;
+    z-index: 999;
+   
+    
+   
+    
+   
+    
+}
+
+.subnav_courses{
+    display: flex;
+    gap: 13px;
+    color: gray;
+    margin-top: 10px;
+    
+}
+
+.main{
+    height: 100%;
+}
+
+
+
+.main .greetings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+    margin-top: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+.main .greetings .search .main_search{
+    border-radius: 7px;
+    width: 600px;
+    height: 50px;
+    position: relative;
+    border: 1px solid #9597a1;
+    color:#9597a1;
+    padding-left: 10px;
+    background: linear-gradient(#eefffa, white);
+    
+}
+
+.main .greetings .search i{
+    position: absolute;
+    margin-top: 20px;
+    right: 680px;
+    font-size: 20px;
+    color: #2f8d46;
+    cursor: pointer;
+}
+
+.examples{
+    display: flex;
+    gap: 30px;
+}
+
+
+.examples button{
+    background-color: white;
+    border: 1px solid #9597a1 ;
+    border-radius: 7px;
+    margin-top: 50px;
+    padding: 10px;
+    position: relative;
+    left: 680px;
+    cursor: pointer;
+
+   
+
+}
+
+.content{
+    height: 100%;
+    width: 50%;
+    
+    position: relative;
+    left: 25%
+}
+
+.main_courses{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_courses button{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.card {
+    height: 350px; 
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    
+    
+    font-family: "Montserrat", sans-serif;
+    padding: 15px;
+}
+
+.card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-level {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #38936b;
+    font-weight: bold;
+
+}
+
+.course_names{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.explore{
+    display: flex;
+    gap: 20px;
+}
+
+.explore-card {
+    height: 100px;
+    width: 250px;
+    background-color: #ae84d1;
+    color: white;
+    border-radius: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.explore-card .card-title {
+    font-size: 22px;
+    margin: 0;
+}
+
+.explore-card i {
+    font-size: 22px;
+    color: white;
+}
+
+
+.e-courses {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px 0; 
+    
+}
+
+
+.ecourse-card{
+    padding: 20px;
+    height: 160px;
+    width: 400px;
+    background-color: aqua;
+    border-radius: 10px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
+    gap: 49px;
+    
+
+}
+
+#card1{
+    background: linear-gradient(rgb(76, 175, 151) 0%, rgb(81, 198, 171) 100%);
+   
+    
+    
+}
+
+.ecourse-button button{
+    background-color: transparent;
+    height: 40px;
+    width: 140px;
+    border: solid 1px white;
+    border-radius: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+#card2{
+    background: linear-gradient(rgb(90, 94, 183) 0%, rgb(112, 117, 234) 100%);    color: white;
+    
+
+}
+
+#card3{
+    background: linear-gradient(rgb(175, 97, 96) 0%, rgb(202, 138, 137) 100%);    text-align: center;
+    
+    
+
+}
+
+#card4{
+    
+    background: linear-gradient(rgb(103, 74, 152) 0%, rgb(165, 148, 195) 100%);
+
+    
+
+
+}
+
+#card5{
+    
+    background: linear-gradient(rgb(37, 135, 156) 0%, rgb(84, 195, 219) 100%);
+
+
+}
+
+#card6{
+    background: linear-gradient(rgb(69, 114, 182) 0%, rgb(120, 158, 218) 100%);
+
+}
+
+#card7{
+    background: linear-gradient(rgb(204, 115, 62) 0%, rgb(234, 163, 120) 100%);
+
+}
+
+#card8{
+    background: linear-gradient(rgb(241, 99, 124) 0%, rgb(227, 153, 166) 100%);
+}
+
+
+
+
+.course-ideas .idea-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: white;
+
+
+}
+
+.course-ideas #idea-content-1  div{
+   
+    background: rgb(84, 134, 189);
+   
+}
+
+.course-ideas .idea-content div{
+    height: 100px;
+    width: 200px;
+    background: rgb(84, 134, 189);
+    
+    border: solid 1px transparent;
+    border-radius: 15px;
+    font-size: 25px;
+    padding: 5px;
+    padding-left: 8px;
+    position: relative;
+
+}
+
+.idea-content i{
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    font-size: 30px;
+
+    
+   
+
+}
+
+.course-ideas #idea-content-2  div{
+   
+    background: rgb(174, 132, 209);
+
+}
+
+.course-ideas #idea-content-3 div{
+    background: rgb(213, 160, 90);
+}
+  
+.course-ideas #idea-content-4 div{
+    background: rgb(204, 143, 142);
+}
+
+.course-ideas #idea-content-5 div{
+    background: rgb(121, 171, 182);
+}
+
+hr{
+    width: 199.80%;
+    left: -476px;
+    position: absolute;
+    border-color:#dedede;
+
+}
+
+footer{
+    
+    height: 250px;
+    position: absolute;
+    left: -476px;
+    width: 200%;
+    margin-top: 10px;
+    display: flex;
+    gap: 5%;
+
+}
+
+.footer-A{
+    width: 25%;
+    color: #646463;
+    margin-left: 10px;
+
+    
+  
+    
+}
+
+.footer-A i{
+    color: #78b587;
+    margin-top: 10px;
+}
+
+.icons {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    display: flex;
+    gap: 7px;
+
+
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+.footer-button button{
+    margin-top: 20px;
+    background-color: #003a78;
+    color: white;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+
+}
+
+.list{
+    display: flex;
+    gap: 150px;
+    flex-wrap: wrap;
+    color: #9597a1;
+}
+
+.list h4{
+    color: #2f8d46;
+}
+
+.list li{
+    list-style-type: none;
+}
+
+.list div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subnav p:hover{
+    color: #2f8d46;
+    cursor: pointer;
+}
+
+.course_names a:hover{
+    color: white;
+    background-color: green;
+    padding: 5px;
+    border-radius: 8px;
+    transition: 0.5s;
+
+}
+.explore i {
+    color: inherit;
+    background-color: inherit;
+    padding: 0;
+    height: auto; 
+    width: auto;
+    border-radius: 0%;
+
+}
+
+.explore i {
+    line-height: 1;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.explore i:hover {
+    color: black;
+    background-color: white;
+    padding: 5px;
+    height: 14px;
+    width: 15px;
+    animation: squareToCircle 0.3s ease-in forwards;
+    line-height: 14px;
+    text-align: center;
+}
+@keyframes squareToCircle {
+    0% {
+        border-radius: 0%;
+    }
+    100% {
+        border-radius: 50%;
+    }
+}
+
+.ecourse-card:hover button{
+    color: green;
+    background-color: white;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    
+
+
+}
+
+.course-ideas i:hover{
+    color: black;
+    background-color: white;
+    padding: 10px;
+    height: 16px;
+    width: 17px;
+    animation: squareToCircle 0.3s ease-in forwards;
+    line-height: 14px;
+    text-align: center;
+    
+
+}
+
+.footer-A img{
+    cursor: pointer;
+}
+
+.footer-A #facebook:hover{
+    color: blue;
+    font-size: 30px;
+    transition-duration: 1s;
+    
+
+}
+
+.footer-A #insta:hover{
+    color: rgb(221, 60, 87);
+    font-size: 30px;
+    transition-duration: 1s;
+    
+
+}
+
+.footer-A #linkedin:hover{
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    height: 16px;
+    width: 17px;
+    animation: squareToCircle 1s ease-in forwards;
+    line-height: 14px;
+    text-align: center;
+    
+
+
+}
+
+.footer-A #twitter:hover{
+    color: white;
+    background-color: black;
+    padding: 12px;
+    height: 16px;
+    width: 17px;
+    animation: squareToCircle 1s ease-in forwards;
+    line-height: 14px;
+    text-align: center;
+    
+
+
+}
+
+.footer-A #youtube:hover{
+    color: white;
+    background-color: red;
+    padding: 12px;
+    height: 24px;
+    width: 24px;
+    animation: squareToCircle 1s ease-in forwards;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    
+
+
+}
